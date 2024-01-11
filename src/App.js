@@ -12,15 +12,6 @@ const App = () => {
                     children prop
                 </Button>
             </div>
-            <div>
-                <Button warning ><GoCloud/>Click me</Button>
-            </div>
-            <div>
-                <Button success outline ><GoDesktopDownload/>Ayo</Button>
-            </div>
-            <div>
-                <Button danger rounded outline><GoDatabase/>Click me</Button>
-            </div>
         </div>
     )
 }
