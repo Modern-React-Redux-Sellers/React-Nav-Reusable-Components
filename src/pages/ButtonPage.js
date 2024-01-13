@@ -7,19 +7,10 @@ const ButtonPage = () => {
         <div>
             ButtonPage.js
             <div>
-                <Button primary >
+                <Button primary rounded>
                     <GoBell />
                     children prop
                 </Button>
-            </div>
-            <div>
-                <Button warning ><GoCloud/>Click me</Button>
-            </div>
-            <div>
-                <Button success outline ><GoDesktopDownload/>Ayo</Button>
-            </div>
-            <div>
-                <Button danger rounded outline><GoDatabase/>Click me</Button>
             </div>
         </div>
     )
