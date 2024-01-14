@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-const Dropdown = ({options,selection,onSelect}) => {
+const Dropdown = ({options,value,onChange}) => {
     const [isOpen,setIsOpen] = useState(false);
 
     const handleClick = () => {
@@ -11,7 +11,7 @@ const Dropdown = ({options,selection,onSelect}) => {
         //closes dropdown
         setIsOpen(false);
         //Sets selection state in App
-        onSelect(option)
+        onChange(option)
 
     }
 
@@ -25,7 +25,7 @@ const Dropdown = ({options,selection,onSelect}) => {
     return (
         <div>
             {/*if selection exists, its label will be used, else Select...*/}
-            <div onClick={handleClick}>{selection?.label || 'Select...'}</div>
+            <div onClick={handleClick}>{value?.label || 'Select...'}</div>
             {isOpen && <div>{renderOptions}</div>}
         </div>
     )
