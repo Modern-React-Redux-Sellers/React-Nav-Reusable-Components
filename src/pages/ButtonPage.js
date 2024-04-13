@@ -9,7 +9,7 @@ const ButtonPage = () => {
             <div>
                 <Button primary rounded>
                     <GoBell />
-                    children prop
+                    children
                 </Button>
             </div>
         </div>
