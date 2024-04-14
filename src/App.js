@@ -26,8 +26,8 @@ const App = () => {
       <Route path="/table">
         <TablePage/>
       </Route>
-      <Route path="/counter" initialCount={0}>
-        <CounterPage/>
+      <Route path="/counter">
+        <CounterPage initialCount={0}/>
       </Route>
     </div>
   </div>
